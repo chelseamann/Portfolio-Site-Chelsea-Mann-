@@ -12,6 +12,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #4a4a4a;
+  padding:20px;
 }
 
 img {
@@ -93,4 +94,20 @@ a:hover {
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.footer {
+  background-color: #d6d6d6;
+}
+
+.social {
+  padding:10px;
+}
+
+.social.hover {
+  opacity:.09;
 }
