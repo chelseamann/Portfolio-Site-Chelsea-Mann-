@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #fcfcfc;
   font-family: 'avenir', sans-serif;
@@ -39,7 +38,7 @@ h4 {
   font-weight: 400;
 }
 
-h5{
+h5 {
   font-size: 1.5em;
   font-weight: 400;
 }
@@ -54,8 +53,9 @@ a {
   color: #white;
   text-decoration: none;
 }
+
 a:visited {
-  color: #white ;
+  color: #white;
 }
 
 a:hover,
@@ -68,6 +68,7 @@ a:active {
   /* selected link */
   color: #4e8e41;
 }
+
 footer {
   background-color: #e8e8e8;
   padding-left: 10px;
@@ -119,7 +120,6 @@ footer {
   text-decoration: underline;
 }
 
-
 /* Layout styling */
 header {
   background-color: #bac2c0;
@@ -150,7 +150,6 @@ nav>ul>li>a:hover {
   color: #EAF3F0;
   text-decoration: underline;
 }
-
 
 #hero {
   background-color: #f5fffb;
@@ -193,24 +192,24 @@ nav>ul>li>a:hover {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
-nav {
- width: auto;
- float: right;
- margin-top: 4px;
-}
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
