@@ -165,6 +165,7 @@ nav>ul>li>a:hover {
 
 .row {
   margin: 25px 0px;
+  display:flex;
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -208,6 +209,9 @@ Medium devices (640px and larger)
     display: block;
   }
 
+#story {
+  padding-left: 20px;
+}
 
 .col-md-6 {
   width: 50%;
