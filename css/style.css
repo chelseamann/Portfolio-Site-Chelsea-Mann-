@@ -45,7 +45,7 @@ h5 {
 
 /*images*/
 img {
-  width: 100%;
+  width:100%;
 }
 
 /*links*/
@@ -156,6 +156,7 @@ nav>ul>li>a:hover {
   padding: 150px, 0px, 0px, 0px;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 .container {
@@ -202,6 +203,14 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  #hero span {
+    display: block;
+  }
+
+
+.col-md-6 {
+  width: 50%;
 }
 
 /* ==============================
