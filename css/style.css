@@ -189,6 +189,9 @@ nav>ul>li>a:hover {
 .footer {
   padding-left: 10px;
 }
+.col-md-6{
+  padding: 20px;
+}
 
 /* ==============================
 Medium devices (640px and larger)
