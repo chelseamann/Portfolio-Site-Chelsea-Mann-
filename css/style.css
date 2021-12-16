@@ -17,13 +17,13 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 700;
-  color: #242424;
+  font-size: 2.25em;
+  font-weight: 500;
+  padding: 20px;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 400;
 }
 
@@ -39,7 +39,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -50,23 +50,22 @@ img {
 
 /*links*/
 a {
-  color: #white;
+  color: ##2e2e2e;
   text-decoration: none;
 }
 
 a:visited {
-  color: #white;
+  color: #2e2e2e;
 }
 
 a:hover,
 a:focus {
-  color: #d5f7ef;
+  color: #2e2e2e;
   text-decoration: underline;
 }
 
 a:active {
-  /* selected link */
-  color: #4e8e41;
+  color: #2e2e2e;
 }
 
 footer {
@@ -75,7 +74,6 @@ footer {
   padding-top: 5px;
 }
 
-/*buttons*/
 .button {
   display: inline-block;
   background-color: #a1a1a1;
@@ -95,8 +93,7 @@ footer {
   font-weight: 400;
   padding: 15px 20px;
   border-radius: 3px;
-  transition: 0.2s;
- transition-property: opacity;
+  transition: 0.2s
 }
 
 .button.cv {
@@ -161,16 +158,16 @@ nav>ul>li>a:hover {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .row {
   margin: 25px 0px;
-  display:flex;
+  display:block;
   /* 25px top and bottom, 0 left and right */
 }
 
-#work .row {
+#work.row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
@@ -179,19 +176,48 @@ nav>ul>li>a:hover {
   max-width: 250px;
 }
 
+.footer {
+  text-align: center;
+}
+
 .social {
-  padding: 10px;
+  margin:auto;
+  width: 100%;
+  padding: 30px;
+  text-align:center;
 }
 
 .social.hover {
-  opacity: .09;
+  opacity: 50%;
 }
 
-.footer {
-  padding-left: 10px;
-}
-.col-md-6{
+.col-md-6 {
+  width: 100%;
   padding: 20px;
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+}
+
+.logo {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  from {fill: #D6ECEC;}
+   to {fill: #DFDFE3;}
+}
+
+.ic2 {
+  max-width: 50%;
+  text-align: center;
+
 }
 
 /* ==============================
@@ -219,29 +245,19 @@ Medium devices (640px and larger)
 
 .col-md-6 {
   width: 50%;
+  padding:10px;
 }
 
-
-[class*="col-"] {
-  float: left;
+.row {
+  display:flex;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {}
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
 /* ==============================
 X-large devices (1440px or larger)
