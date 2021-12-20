@@ -50,8 +50,7 @@ img {
 
 /*links*/
 a {
-  color: ##2e2e2e;
-  text-decoration: none;
+  color: #2e2e2e;
 }
 
 a:visited {
@@ -96,26 +95,26 @@ footer {
   transition: 0.2s
 }
 
+.button:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .button.cv {
+  text-transform: uppercase;
   display: inline-block;
-  background-color: #99c4bd;
-  color: #4a4a4a;
+  background-color: #fcfcfc;
   text-align: center;
   font-weight: 400;
   padding: 15px 20px;
+  border-color: #99c4bd;
   border-radius: 3px;
   transition: 0.2s;
-  border: #ffffff;
 }
 
 .button.cv:hover {
   opacity: 0.8;
-  text-decoration: underline;
-}
-
-.button:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+  background-color: #99c4bd;
 }
 
 /* Layout styling */
@@ -151,7 +150,7 @@ nav>ul>li>a:hover {
 
 #hero {
   background-color: #f5fffb;
-  padding: 150px, 0px, 0px, 0px;
+  padding: 20px 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -194,7 +193,6 @@ nav>ul>li>a:hover {
 .col-md-6 {
   width: 100%;
   padding: 20px;
-  text-align: center;
 }
 
 .links {
@@ -219,6 +217,7 @@ nav>ul>li>a:hover {
   text-align: center;
 
 }
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -252,7 +251,6 @@ Medium devices (640px and larger)
   display:flex;
 }
 
-}
 
 /* ==============================
 Large devices (1024px or larger)
