@@ -103,11 +103,11 @@ footer {
 .button.cv {
   text-transform: uppercase;
   display: inline-block;
-  background-color: #fcfcfc;
+  background-color: transparent;
   text-align: center;
   font-weight: 400;
   padding: 15px 20px;
-  border-color: #99c4bd;
+  border: #99c4bd solid 5px;
   border-radius: 3px;
   transition: 0.2s;
 }
@@ -115,6 +115,10 @@ footer {
 .button.cv:hover {
   opacity: 0.8;
   background-color: #99c4bd;
+}
+
+.social-hover:hover{
+  opacity:0.8;
 }
 
 /* Layout styling */
@@ -172,7 +176,7 @@ nav>ul>li>a:hover {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .footer {
@@ -180,14 +184,24 @@ nav>ul>li>a:hover {
 }
 
 .social {
-  margin:auto;
+  margin:0 auto;
   width: 100%;
+  justify-content: center;
   padding: 30px;
+  display:flex;
   text-align:center;
 }
 
-.social.hover {
-  opacity: 50%;
+.row2{
+  display:block;
+}
+
+.social-hover:hover {
+  opacity: .8;
+}
+
+.social-hover {
+  padding:10px;
 }
 
 .col-md-6 {
@@ -199,25 +213,30 @@ nav>ul>li>a:hover {
   text-align: center;
 }
 
-.logo {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.photome {
+  max-height: 10px;
 }
+
 
 @keyframes color-change {
   from {fill: #D6ECEC;}
    to {fill: #DFDFE3;}
-}
+ }
+
+#c {
+   animation-duration: 1s;
+   animation-name: color-change;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-timing-function: linear;
+ }
+
 
 .ic2 {
   max-width: 50%;
   text-align: center;
 
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
