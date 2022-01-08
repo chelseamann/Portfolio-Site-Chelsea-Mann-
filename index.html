@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="utf-8">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+      </script>
       <script src="js/scripts.js"></script>
+      <script src="https://kit.fontawesome.com/266e1a2b8f.js" crossorigin="anonymous"></script>
       <title> Chelsea Mann's portfolio </title>
    </head>
+
    <body id="body">
       <header>
          <div class="container">
+           <div class="navtoggle" id="myNavtoggle">
             <div class="logo">
-               <svg width="462px" height="332px" viewBox="0 0 462 332" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <title>Artboard</title>
-                  <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                     <g id="Artboard">
-                        <path d="M146.849609,274.419922 C172.142578,274.419922 195.482422,268.902344 216.869141,257.867188 L216.869141,257.867188 L216.869141,231.5 C193.431641,244.097656 171.458984,250.396484 150.951172,250.396484 C127.123047,250.396484 108.324219,242.413086 94.5546875,226.446289 C80.7851562,210.479492 73.9003906,188.677734 73.9003906,161.041016 C73.9003906,132.037109 80.3457031,109.576172 93.2363281,93.6582031 C106.126953,77.7402344 124.339844,69.78125 147.875,69.78125 C163.988281,69.78125 186.888672,74.9082031 216.576172,85.1621094 L216.576172,85.1621094 L216.576172,56.3046875 C190.501953,49.9570312 167.748047,46.7832031 148.314453,46.7832031 C114.330078,46.7832031 87.9873047,56.7441406 69.2861328,76.6660156 C50.5849609,96.5878906 41.234375,124.615234 41.234375,160.748047 C41.234375,196.978516 50.4140625,224.981445 68.7734375,244.756836 C87.1328125,264.532227 113.158203,274.419922 146.849609,274.419922 Z" id="C" fill="#D6ECEC" fill-rule="nonzero"></path>
-                        <polygon id="M" fill="#DFDFE3" fill-rule="nonzero" points="233.345703 269 233.345703 92.1933594 291.353516 254.498047 321.089844 254.498047 380.855469 92.6328125 380.855469 269 409.566406 269 409.566406 52.203125 371.480469 52.203125 309.664062 219.927734 249.605469 52.203125 206.978516 52.203125 206.978516 269"></polygon>
-                     </g>
-                  </g>
-               </svg>
+              <picture>
+                <source srcset="image/logo.png" media="(max-width:767px)">
+                <img src="image/logo.png" alt="logo" class="logo">
+              </picture>
             </div>
             <nav>
                <ul>
                   <li><a href="index.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="#Contact">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                </ul>
             </nav>
          </div>
+       </div>
       </header>
       <main>
          <div id="hero">
