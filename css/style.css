@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #bac2c0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
 body {
   background-color: #fcfcfc;
   font-family: 'avenir', sans-serif;
@@ -9,7 +17,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #4a4a4a;
-  padding: 20px;
+  padding: 10px;
 }
 
 h1, h2, h3, h4 {
@@ -41,6 +49,10 @@ h4 {
 h5 {
   font-size: 1em;
   font-weight: 400;
+}
+
+main {
+  padding:0px;
 }
 
 /*images*/
@@ -75,13 +87,13 @@ footer {
 
 .button {
   display: inline-block;
-  background-color: #a1a1a1;
+  background-color:  #bac2c0;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-weight: 400;
   padding: 15px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: 0.2s;
 }
 
@@ -103,13 +115,17 @@ footer {
 .button.cv {
   text-transform: uppercase;
   display: inline-block;
-  background-color: transparent;
+  background-color: #e6f2f0;
   text-align: center;
   font-weight: 400;
   padding: 15px 20px;
   border: #99c4bd solid 5px;
   border-radius: 3px;
   transition: 0.2s;
+}
+.cv {
+  padding-left: 35px;
+  padding-top: 35px;
 }
 
 .button.cv:hover {
@@ -121,21 +137,10 @@ footer {
   opacity:0.8;
 }
 
-/* Layout styling */
-header {
-  background-color: #bac2c0;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  padding: 10px 0 4px;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-top: 20px;
 }
 
 nav>ul>li>a {
@@ -152,7 +157,6 @@ nav>ul>li>a:hover {
 
 #hero {
   background-color: #f5fffb;
-  padding: 20px 20px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -163,7 +167,7 @@ nav>ul>li>a:hover {
 }
 
 .row {
-  margin: 25px 0px;
+  margin: 15px 0px;
   display:block;
   /* 25px top and bottom, 0 left and right */
 }
@@ -204,15 +208,11 @@ nav>ul>li>a:hover {
 
 .col-md-6 {
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 
 .links {
   text-align: center;
-}
-
-.photome {
-  max-height: 10px;
 }
 
 
@@ -229,11 +229,10 @@ nav>ul>li>a:hover {
    animation-timing-function: linear;
  }
 
-
 .ic2 {
-  max-width: 50%;
-  text-align: center;
-
+  max-width: 80%;
+  padding: 30px;
+  justify-content: center;
 }
 
 .navtoggle li:not(:last-child) {
@@ -260,16 +259,17 @@ nav>ul>li>a:hover {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 10px;
   }
+
 
   nav > ul > li {
     display: inline-block;
@@ -306,6 +306,22 @@ Medium devices (640px and larger)
 
 .navtoggle li:last-child {
   display: none;
+}
+
+main {
+  padding-left:30px;
+  padding-right: 30px;
+}
+
+.photome {
+  max-width: 450px;
+  max-height: 600px;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.story {
+  padding-right: 30px;
 }
 
 
