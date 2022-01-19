@@ -4,6 +4,7 @@
 
 header {
   background-color: #bac2c0;
+  color:inherit;
   text-align: center;
   position: relative;
   width: 100%;
@@ -21,13 +22,13 @@ body {
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.4;
+  line-height: 1;
 }
 
 h1 {
   font-size: 2.25em;
   font-weight: 500;
-  padding: 20px;
+  padding: 15px;
 }
 
 h2 {
@@ -57,7 +58,7 @@ main {
 
 /*images*/
 img {
-  width:100%;
+  width:95%;
 }
 
 /*links*/
@@ -108,7 +109,7 @@ footer {
 }
 
 .button:hover {
-  opacity: 0.8;
+  opacity: 0.6;
   text-decoration: underline;
 }
 
@@ -125,16 +126,12 @@ footer {
 }
 .cv {
   padding-left: 35px;
-  padding-top: 35px;
+  padding-top: 50px;
 }
 
 .button.cv:hover {
   opacity: 0.8;
   background-color: #99c4bd;
-}
-
-.social-hover:hover{
-  opacity:0.8;
 }
 
 nav>ul {
@@ -144,8 +141,8 @@ nav>ul {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
-  font-weight: 700;
+  padding: 0 20px;
+  font-weight: 500;
   color: #4a4a4a;
   text-decoration: none;
 }
@@ -160,6 +157,7 @@ nav>ul>li>a:hover {
   display: inline-block;
   width: 100%;
   text-align: center;
+  padding:10px;
 }
 
 .container {
@@ -195,7 +193,7 @@ nav>ul>li>a:hover {
 }
 
 .row2{
-  display:block;
+  display:flex;
 }
 
 .social-hover:hover {
@@ -206,28 +204,15 @@ nav>ul>li>a:hover {
   padding:10px;
 }
 
-.col-md-6 {
+.col-sm-12 {
   width: 100%;
   padding: 30px;
 }
 
+
 .links {
   text-align: center;
 }
-
-
-@keyframes color-change {
-  from {fill: #D6ECEC;}
-   to {fill: #DFDFE3;}
- }
-
-#c {
-   animation-duration: 1s;
-   animation-name: color-change;
-   animation-iteration-count: infinite;
-   animation-direction: alternate;
-   animation-timing-function: linear;
- }
 
 .ic2 {
   max-width: 80%;
@@ -255,14 +240,19 @@ nav>ul>li>a:hover {
   display: block;
 }
 
+.col-sm-6 {
+  width:50%;
+}
+
+.copy {
+  text-align: center;
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
-  header {
-    text-align: unset;
-  }
 
   nav {
     width: auto;
@@ -275,8 +265,8 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-  nav > ul {
-    margin: 1em 0;
+  .p {
+    padding:0 70px;
   }
 
   #hero span {
@@ -284,12 +274,14 @@ Medium devices (640px and larger)
   }
 
 #story {
+  background-color: #f5fffb;
   padding-left: 20px;
+
 }
 
 .col-md-6 {
   width: 50%;
-  padding:10px;
+  padding:15px;
 }
 
 .row {
@@ -309,21 +301,27 @@ Medium devices (640px and larger)
 }
 
 main {
-  padding-left:30px;
-  padding-right: 30px;
+  padding: 0px 30px 0px 30px;
 }
 
 .photome {
-  max-width: 450px;
+  max-width: 500px;
   max-height: 600px;
   text-align: center;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .story {
   padding-right: 30px;
 }
 
+/* ==============================
+Large devices (900px or larger)
+================================= */
+@media only screen and (min-width: 900px) {
+
+
+}
 
 /* ==============================
 Large devices (1024px or larger)
