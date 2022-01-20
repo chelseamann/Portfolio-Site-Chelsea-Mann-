@@ -16,9 +16,8 @@ body {
   font-family: 'avenir', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #4a4a4a;
-  padding: 10px;
 }
 
 h1, h2, h3, h4 {
@@ -28,7 +27,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.25em;
   font-weight: 500;
-  padding: 15px;
+  padding: 10px;
 }
 
 h2 {
@@ -70,10 +69,12 @@ a:visited {
   color: #2e2e2e;
 }
 
-a:hover,
+a:hover{
+  opacity: 0.6;
+}
+
 a:focus {
   color: #2e2e2e;
-  text-decoration: underline;
 }
 
 a:active {
@@ -88,14 +89,14 @@ footer {
 
 .button {
   display: inline-block;
-  background-color:  #bac2c0;
-  color: #ffffff;
+  background-color: #e6f2f0;
   text-align: center;
   text-decoration: none;
   font-weight: 400;
   padding: 15px 20px;
   border-radius: 5px;
   transition: 0.2s;
+  border: #99c4bd solid 3px;
 }
 
 .button.contact {
@@ -105,12 +106,14 @@ footer {
   font-weight: 400;
   padding: 15px 20px;
   border-radius: 3px;
-  transition: 0.2s
+  transition: 0.2s;
+  border: #99c4bd
 }
 
 .button:hover {
-  opacity: 0.6;
-  text-decoration: underline;
+  opacity: 0.8;
+  background-color: #99c4bd;
+  color:#FFFFFF;
 }
 
 .button.cv {
@@ -132,6 +135,7 @@ footer {
 .button.cv:hover {
   opacity: 0.8;
   background-color: #99c4bd;
+  color:#FFFFFF;
 }
 
 nav>ul {
@@ -141,23 +145,23 @@ nav>ul {
 }
 
 nav>ul>li>a {
-  padding: 0 20px;
-  font-weight: 500;
+  padding: 10px 20px;
+  font-weight: 350;
   color: #4a4a4a;
   text-decoration: none;
 }
 
 nav>ul>li>a:hover {
-  color: #EAF3F0;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 #hero {
-  background-color: #f5fffb;
+  background-color: #EAF3F0;
   display: inline-block;
   width: 100%;
   text-align: center;
-  padding:10px;
+  padding-bottom: 20px;
 }
 
 .container {
@@ -197,7 +201,7 @@ nav>ul>li>a:hover {
 }
 
 .social-hover:hover {
-  opacity: .8;
+  opacity: .5;
 }
 
 .social-hover {
@@ -231,8 +235,8 @@ nav>ul>li>a:hover {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
-  font-size: 20px;
+  top: 10px;
+  font-size: 25px;
   padding-right: 0;
 }
 
@@ -248,7 +252,13 @@ nav>ul>li>a:hover {
   text-align: center;
 }
 
+.dim {
+opacity: 0.8;
+}
 
+.p {
+  opacity: 0.7;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -272,12 +282,6 @@ Medium devices (640px and larger)
   #hero span {
     display: block;
   }
-
-#story {
-  background-color: #f5fffb;
-  padding-left: 20px;
-
-}
 
 .col-md-6 {
   width: 50%;
@@ -307,12 +311,11 @@ main {
 .photome {
   max-width: 500px;
   max-height: 600px;
-  text-align: center;
   padding-left: 30px;
 }
 
 .story {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 /* ==============================
@@ -320,8 +323,12 @@ Large devices (900px or larger)
 ================================= */
 @media only screen and (min-width: 900px) {
 
+  .story {
+    padding-right: 40px;
+  }
 
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
