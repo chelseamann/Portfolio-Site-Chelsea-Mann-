@@ -219,9 +219,7 @@ nav>ul>li>a:hover {
 }
 
 .ic2 {
-  max-width: 80%;
-  padding: 30px;
-  justify-content: center;
+  text-align: center;
 }
 
 .navtoggle li:not(:last-child) {
@@ -316,6 +314,7 @@ Medium devices (640px and larger)
 
 main {
   padding: 0px 30px 0px 30px;
+
 }
 
 .photome {
@@ -327,7 +326,6 @@ main {
 .story {
   padding-right: 20px;
 }
-
 
 
 /* ==============================
