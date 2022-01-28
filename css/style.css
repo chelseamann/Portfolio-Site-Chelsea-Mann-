@@ -197,7 +197,7 @@ nav>ul>li>a:hover {
 }
 
 .row2{
-  display:flex;
+  display:block;
 }
 
 .social-hover:hover {
@@ -317,7 +317,9 @@ main {
 .story {
   padding-right: 20px;
 }
-
+.row2{
+  display:flex;
+}
 /* ==============================
 Large devices (900px or larger)
 ================================= */
