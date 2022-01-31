@@ -197,7 +197,7 @@ nav>ul>li>a:hover {
 }
 
 .row2{
-  display:flex;
+  display:block;
 }
 
 .social-hover:hover {
@@ -210,7 +210,6 @@ nav>ul>li>a:hover {
 
 .col-sm-12 {
   width: 100%;
-  padding: 30px;
 }
 
 
@@ -321,10 +320,15 @@ main {
   max-width: 500px;
   max-height: 600px;
   padding-left: 30px;
+  border-radius: 7px;
 }
 
 .story {
   padding-right: 20px;
+}
+
+.row2 {
+  display:flex;
 }
 
 
